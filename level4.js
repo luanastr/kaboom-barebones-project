@@ -45,7 +45,7 @@ scene('game', () => {
 ])
 
 add([
-  pos(0,560),
+  pos(0,height()),
   rect(width(),height()/5),
   color(255,255,255,0.2),
   area(),
@@ -54,7 +54,7 @@ add([
   const enemy = add([
   sprite("enemy"),
   pos(800, 420),
-  scale(0.5),
+  scale(0.75),
   body(),
   area(),
   "enemy"
@@ -63,7 +63,7 @@ add([
 const player = add([
   sprite("player"),
   pos(280, 420),
-  scale(0.5),
+  scale(0.75),
   area(),
   body(),
   "player"
